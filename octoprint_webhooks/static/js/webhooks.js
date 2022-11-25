@@ -30,7 +30,7 @@ $(function() {
             //Select the first hook. There should always be a selected hook.
             self.selectHook(0)
             //Get the list of available templates.
-            let templates = ["simple.json", "fulldata.json", "snapshot.json",
+            let templates = ["real_wecom.json","simple.json", "fulldata.json", "snapshot.json",
             "oauth.json", "dotnotation.json", "slack.json", "plivo.json", "alexa_notify_me.json"]
             let callbacksLeft = templates.length;
             for (let i = 0; i < templates.length; i = i + 1) {
