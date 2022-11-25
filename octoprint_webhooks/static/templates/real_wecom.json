@@ -1,0 +1,20 @@
+
+
+{
+  "url": "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=改成你的密钥",
+  "content_type":"JSON",
+  "data":"{\n\"msgtype\": \"news\",\n      \"news\": {\n         \"articles\" : [\n             {\n                 \"title\" : \"@message 进度：@percentCompleteMilestone \",\n                 \"description\" : \"@job.file.name\",\n                 \"url\" : \"http://10.244.1.8:8000/webcam/stream_simple.html\",\n                 \"picurl\" : \"http://10.244.1.8:8000/webcam/?action=snapshot\"\n           }\n        ]\n     }\n  }\n ",
+  "eventErrorMessage":"系统错误",
+  "eventPrintDoneMessage":"打印完成了.",
+  "eventPrintFailedMessage":"系统错误，打印失败",
+  "eventPrintPausedMessage":"打印暂停，请检查",
+  "eventPrintProgressMessage":"打印进度 @percentCompleteMilestone % ",
+  "eventPrintStartedMessage":"开始打印",
+  "eventUserActionNeededMessage":"需要用户操作",
+  "event_print_progress_interval":"10",
+  "headers":"{\n  \"Content-Type\": \"application/json\"\n}",
+  "http_method":"POST",
+  "oauth":false,
+  "_name":"Real",
+  "_description":"Real Wecom"
+ }
